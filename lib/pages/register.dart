@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:product_app/controllers/auth_controller.dart';
 import 'package:product_app/pages/home.dart';
+import 'package:product_app/pages/login.dart';
 
 class RegisterPage extends StatefulWidget {
   const RegisterPage({super.key});
@@ -42,7 +43,7 @@ class _RegisterPageState extends State<RegisterPage> {
       if (user != null) {
         Navigator.pushReplacement(
           context,
-          MaterialPageRoute(builder: (context) => HomePage()),
+          MaterialPageRoute(builder: (context) => LoginPage()),
         );
       } else {
         // ถ้าการลงทะเบียนล้มเหลว
